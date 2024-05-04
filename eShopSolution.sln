@@ -45,6 +45,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.DynamicLinqQueryBuil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Castle.DynamicLinqQueryBuilder.Tests", "dynamic-linq-query-builder-master\Castle.DynamicLinqQueryBuilder.Tests\Castle.DynamicLinqQueryBuilder.Tests.csproj", "{989C8C53-6A32-4E02-906C-0030AD2730B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Razor.BQueryBuilder.CustomApp", "dynamic-linq-query-builder-master\NetCore.Razor.BQueryBuilder.CustomApp\NetCore.Razor.BQueryBuilder.CustomApp.csproj", "{AC98B0D7-5A44-4564-9140-A0FAB4881A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.MVC.BQueryBuilder.CustomApp", "dynamic-linq-query-builder-master\NetCore.MVC.BQueryBuilder.CustomApp\NetCore.MVC.BQueryBuilder.CustomApp.csproj", "{8D8D4085-40B3-47B7-912D-407097395542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -124,6 +128,18 @@ Global
 		{989C8C53-6A32-4E02-906C-0030AD2730B3}.LocalTest|Any CPU.Build.0 = LocalTest|Any CPU
 		{989C8C53-6A32-4E02-906C-0030AD2730B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{989C8C53-6A32-4E02-906C-0030AD2730B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC98B0D7-5A44-4564-9140-A0FAB4881A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC98B0D7-5A44-4564-9140-A0FAB4881A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC98B0D7-5A44-4564-9140-A0FAB4881A40}.LocalTest|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC98B0D7-5A44-4564-9140-A0FAB4881A40}.LocalTest|Any CPU.Build.0 = Debug|Any CPU
+		{AC98B0D7-5A44-4564-9140-A0FAB4881A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC98B0D7-5A44-4564-9140-A0FAB4881A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8D4085-40B3-47B7-912D-407097395542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8D4085-40B3-47B7-912D-407097395542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8D4085-40B3-47B7-912D-407097395542}.LocalTest|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8D4085-40B3-47B7-912D-407097395542}.LocalTest|Any CPU.Build.0 = Debug|Any CPU
+		{8D8D4085-40B3-47B7-912D-407097395542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8D4085-40B3-47B7-912D-407097395542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +158,8 @@ Global
 		{AC3E1BD1-F24C-4F38-9929-7B571C143BAE} = {00EB4D72-7A43-431A-926E-33BBE29FFDBD}
 		{22861CF7-71BB-44AF-9630-AC3A59F36838} = {00EB4D72-7A43-431A-926E-33BBE29FFDBD}
 		{989C8C53-6A32-4E02-906C-0030AD2730B3} = {00EB4D72-7A43-431A-926E-33BBE29FFDBD}
+		{AC98B0D7-5A44-4564-9140-A0FAB4881A40} = {00EB4D72-7A43-431A-926E-33BBE29FFDBD}
+		{8D8D4085-40B3-47B7-912D-407097395542} = {00EB4D72-7A43-431A-926E-33BBE29FFDBD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE6DCA36-5079-4285-8DF5-8F8DC5B50570}
