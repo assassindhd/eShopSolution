@@ -4,34 +4,48 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HUPOSOFT</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/colorpicker.css" />
+    <link rel="stylesheet" href="~/css/datepicker.css" />
+    <link rel="stylesheet" href="~/css/uniform.css" />
+    <link rel="stylesheet" href="~/css/fullcalendar.css" />
+    <link rel="stylesheet" href="~/css/select2.css" />
+    <link rel="stylesheet" href="~/css/maruti-style.css" />
+    <link rel="stylesheet" href="~/css/maruti-media.css" class="skin-color" />
+
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HUPOSOFT.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HUPOSOFT</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div>
+        <div class="container-fluid">
+            <h1><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HUPOSOFT</a></h1>
+            <div id="user-nav" class="navbar navbar-inverse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Import"><i class="icon icon-signal"></i> <span>Nhập dữ liệu</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Drug"><i class="icon icon-inbox"></i> <span>Kiểm tra sử dụng thuốc</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Patient"><i class="icon icon-inbox"></i> <span>Patient List</span></a>
+                    </li>
                     <partial name="_LoginPartial" />
+                </ul>
+                <div>
+                    
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
+        </div>
+    </div>
+    
+    <div id="content">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -39,12 +53,32 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - HUPOSOFT - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - HUPOSOFT - <a href="https://www.hup.edu.vn">hup.edu.vn</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/js/excanvas.min.js"></script>
+    <script src="~/js/jquery.ui.custom.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/bootstrap-colorpicker.js"></script>
+    <script src="~/js/bootstrap-datepicker.js"></script>
+    <script src="~/js/jquery.uniform.js"></script>
+    <script src="~/js/jquery.flot.min.js"></script>
+    <script src="~/js/jquery.flot.resize.min.js"></script>
+    <script src="~/js/jquery.peity.min.js"></script>
+    <script src="~/js/fullcalendar.min.js"></script>
+    <script src="~/js/select2.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/maruti.js"></script>
+    <script src="~/js/maruti.form_common.js"></script>
+    <script src="~/js/maruti.tables.js"></script>
+    <script src="~/js/maruti.dashboard.js"></script>
+    <script src="~/js/maruti.chat.js"></script>
+    <script src="~/js/site.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

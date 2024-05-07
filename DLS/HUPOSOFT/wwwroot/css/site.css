@@ -20,3 +20,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.nav-link{
+    font-size:15px !important;
+}
